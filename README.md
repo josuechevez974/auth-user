@@ -12,13 +12,26 @@ Proyecto de autenticacion de usuario. Posee un panel administrativo de roles y p
 
 ## Paquetes usados
 
-- laravel-breez
-- livewire:^3.x
-- laravel-sail (opcional)
-- laravel-crud-generator
+- <a href="https://github.com/laravel/breeze">laravel-breez</a>
+- <a href="https://livewire.laravel.com/">livewire:^3.x</a>
+- <a href="https://github.com/laravel/sail">
+    laravel-sail (opcional) se recomienda php 8.2
+  </a> 
+- <a href="https://github.com/awais-vteams/laravel-crud-generator">
+    laravel-crud-generator
+  </a>
 
 ## Paleta de estilos
-- Tailwindcss
+- <a href="https://tailwindcss.com/docs/guides/laravel">
+    Tailwindcss
+  </a>
+
+## Base de datos
+- Mysql Server:^8.2.x
+- SQL Server:
+  <small style="color: yellow;">
+    Necesita usar mysql server para generar y luego cambiar la conexion del los modelos.
+  </small>
 
 ## About Laravel
 
