@@ -7,6 +7,19 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Laravel Auth 
+Proyecto de autenticacion de usuario. Posee un panel administrativo de roles y permisos, envios de correo electronicos desde el administrador para restaurar contraseñas, es perfecto para dar inicio a un poryecto nuevo.
+
+## Paquetes usados
+
+- laravel-breez
+- livewire:^3.x
+- laravel-sail (opcional)
+- laravel-crud-generator
+
+## Paleta de estilos
+- Tailwindcss
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
