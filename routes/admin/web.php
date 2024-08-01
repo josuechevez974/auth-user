@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('admin')
-    ->middleware(['web','auth', 'role:Admin'])
+    ->middleware(['auth'])
     ->group(function () {
         Route::get('/users', \App\Livewire\Users\Index::class)->name('users.index');
         Route::get('/users/create', \App\Livewire\Users\Create::class)->name('users.create');

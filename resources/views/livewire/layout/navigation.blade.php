@@ -35,17 +35,17 @@ new class extends Component {
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('users.index')" :active="request()->routeIs('users')" wire:navigate>
+                    <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')" wire:navigate>
                         {{ __('Users') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('roles.index')" :active="request()->routeIs('roles')" wire:navigate>
+                    <x-nav-link :href="route('roles.index')" :active="request()->routeIs('roles.index')" wire:navigate>
                         {{ __('Roles') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('permissions.index')" :active="request()->routeIs('permissions')" wire:navigate>
+                    <x-nav-link :href="route('permissions.index')" :active="request()->routeIs('permissions.index')" wire:navigate>
                         {{ __('Permissions') }}
                     </x-nav-link>
                 </div>
@@ -133,15 +133,15 @@ new class extends Component {
                 @hasanyrole('Admin')
                     <hr>
 
-                    <x-responsive-nav-link :href="route('users.index')" wire:navigate>
+                    <x-responsive-nav-link :href="route('users.index')" :active="request()->routeIs('user.index')"  wire:navigate>
                         {{ __('Users') }}
                     </x-responsive-nav-link>
 
-                    <x-responsive-nav-link :href="route('roles.index')" wire:navigate>
+                    <x-responsive-nav-link :href="route('roles.index')" :active="request()->routeIs('roles.index')" wire:navigate>
                         {{ __('Roles') }}
                     </x-responsive-nav-link>
 
-                    <x-responsive-nav-link :href="route('permissions.index')" wire:navigate>
+                    <x-responsive-nav-link :href="route('permissions.index')" :active="request()->routeIs('permissions.index')" wire:navigate>
                         {{ __('Permissions') }}
                     </x-responsive-nav-link>
                 @else
